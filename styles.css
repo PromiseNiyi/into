@@ -47,16 +47,6 @@ section{
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* section1 */
 .first-section{
     padding: 20px;
@@ -122,89 +112,25 @@ span{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* section 2 */
 .second-section{
-    padding: 10px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 200vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
 }
 
-img{
+/* img{
     max-width: 100%;
     height: auto;
     vertical-align: middle;
     display: inline-block;
 
-}
+} */
 
-/*.gallery .image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
 
-.gallery .image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-.gallery{
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-    grid-auto-rows: 350px;
-    grid-auto-flow: dense;
-    width: 700px;
-}
-
-.image p {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: #fff;
-      font-size: 18px;
-      font-weight: bold;
-      text-align: center;
-      opacity: 1;
-      transition: opacity 0.3s ease;
-    }
-
-   .image:hover p {
-      opacity: 1;
-    }
-*/
 /*___________________________________________________________________________________*/
 
 
@@ -215,21 +141,26 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       	display: grid;
 /*      grid-template-columns: repeat(5, 1fr);*/
 				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      	gap: 10px;
+      	grid-gap: 10px;
+        /* grid-auto-flow: dense; */
+        /* grid-auto-rows: 200px; */
     }
 
     /* Grid item */
     .grid-item {
       position: relative;
-    
+      width: 100%;
+      height: 250px; /* Change this value to set the height of the grid items */
+      overflow: hidden;
+    border-radius: 5px;
     }
 
     /* Image */
     .grid-item img {
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
       display: block;
-      /* object-fit: cover; */
     }
 
     /* Gradient overlay */
@@ -240,7 +171,7 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       left: 0;
       width: 100%;
       height: 100%;
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.974));
       opacity: 0;
       transition: opacity 0.3s ease;
     }
@@ -252,9 +183,9 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
     .grid-item p {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      top: 70%;
+      left: 20%;
+      transform: translate(-60%, -30%);
       color: #fff;
       font-size: 18px;
       font-weight: bold;
@@ -267,14 +198,23 @@ grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       opacity: 1;
     }
 
-    /* .grid-container .wide{
-        grid-column: span 2;
-    } */
+    .grid-item:first-child {
+        grid-row-end: span 2;
+        height: auto;
+      }
+      .grid-item:not(:first-child) {
+        grid-row-end: span 1;
+      }
 
+      .grid-item.long {
+        grid-column: span 2;
+        
+      }
 
 /*_____________________________________________________________*/
 .gallery .wide{
     grid-column: span 2;
+  
 }
 
 .gallery .tall{
