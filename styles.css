@@ -11,6 +11,8 @@
 
 html,body{
     background-color: black;
+    width: 100%;
+    overflow-x: hidden;
     }
 
 
@@ -42,6 +44,8 @@ li a{
 
 section{
     height: 100vh;
+    width: 100%;
+    /* overflow-x: hidden; */
 }
 
 
@@ -114,7 +118,7 @@ span{
 
 /* section 2 */
 .second-section{
-    padding: 100px;
+    padding: 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,7 +144,7 @@ span{
         justify-content: center;
       	display: grid;
 /*      grid-template-columns: repeat(5, 1fr);*/
-				grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       	grid-gap: 10px;
         /* grid-auto-flow: dense; */
         /* grid-auto-rows: 200px; */
@@ -235,3 +239,49 @@ span{
 .gallery .long{
     grid-row: span 3;
 }
+
+
+
+
+
+
+
+    
+@media only screen and (max-width: 720px) {
+
+    .second-section{
+            width: 100%;
+    }
+    
+        .grid-container {
+            width: 100%;
+            margin: 10px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 10px;
+           
+        }
+    
+        .grid-item {
+            position: relative;
+            width: 100%;
+            height: 250px; /* Change this value to set the height of the grid items */
+            overflow: hidden;
+            border-radius: 5px;
+          }
+    
+        .grid-item:first-child {
+            grid-row-end: span 1;
+            height: 250px;
+          }
+          .grid-item:not(:first-child) {
+            grid-row-end: span 1;
+          }
+    
+          .grid-item.long {
+            grid-column: span 1;
+            
+          }
+    
+    
+    }
+        
