@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intocreativity</title>
-    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="shortcut icon" href="icons/menu.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/animate.css">
+
+
+
+    <script type="text/javascript" src="scripts/scripts.js" defer></script>
+    <script type="text/javascript" src="scripts/animate.js"></script>
+
 </head>
 <body>
 
@@ -17,10 +26,32 @@
                 <li><a href="#">Clients</a></li>
                 <li><a href="#">Project</a></li>
             </ul>
-            <a href="#"><img src="" alt="logo"></a>
+            <a href="#"><img src="" alt="go-btn"></a>
         </nav>
+        <div class="resize-menu" >
+          <a href="#"><img src="icons/menu.png" alt="menu-btn"  id="menuToggle"></a>
+         
+         
+          <a href="#"><img src="" alt="go-btn"></a>
+        </div>
+       
     </header>
+
+    <div class="menu" id="menu">
+      <div class="close"><a href="#"><img src="icons/close.png" alt="close-btn" onclick="toggleMenu()"></a></div>
+      
+      <ul class="navigation">
+      <li><a href="#"><img src="" alt="logo" id="navLogo"></a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Clients</a></li>
+      <li><a href="#">Project</a></li>
+      </ul>
+  </div>
+   
+
     <section class="first-section">
+      
         <div class="wrapper">
             <p>Coding is</p>
             <div class="words">
@@ -110,4 +141,56 @@
        
     </section>
 </body>
+
+<!-- 
+<script>
+  // Function to toggle the menu
+  function toggleMenu() {
+    var menuContainer = document.getElementById("menu");
+    if (menuContainer.style.display === "" || menuContainer.style.display ===  "none") {
+      menuContainer.style.display = "flex";
+    } 
+    else {
+      menuContainer.style.display = "none";
+    }
+  }
+
+
+  function hideMenuOnClickOutside(event) {
+      var menuContainer = document.getElementById("menu");
+      var button = document.getElementById("button");
+      if (!menuContainer.contains(event.target) && event.target !== button) {
+        menuContainer.style.display = "none";
+        document.removeEventListener("click", hideMenuOnClickOutside);
+      }
+    }
+    document.getElementById("menuToggle").addEventListener("click", toggleMenu);
+  </script> -->
+
+<script>
+  // Function to toggle the menu
+  function toggleMenu() {
+    var menuContainer = document.getElementById("menu");
+    if (menuContainer.style.display === "" || menuContainer.style.display === "none") {
+      menuContainer.style.display = "flex";
+      document.addEventListener("click", hideMenuOnClickOutside);
+    } else {
+      menuContainer.style.display = "none";
+      document.removeEventListener("click", hideMenuOnClickOutside);
+    }
+  }
+
+  // Function to hide the menu if clicked outside
+  function hideMenuOnClickOutside(event) {
+    var menuContainer = document.getElementById("menu");
+    var menuToggle = document.getElementById("menuToggle");
+    if (!menuContainer.contains(event.target) && event.target !== menuToggle) {
+      menuContainer.style.display = "none";
+      document.removeEventListener("click", hideMenuOnClickOutside);
+    }
+  }
+
+  // Attach click event listener to the menu toggle image
+  document.getElementById("menuToggle").addEventListener("click", toggleMenu);
+</script>
 </html>
