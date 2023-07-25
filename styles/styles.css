@@ -1,11 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,100&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+@font-face {
+    font-family: intomedia;
+    src: url(/font/Fractul-Bold.ttf) format('truetype'),
+         url(/font/Fractul-Bold.otf) format('otf');
+    font-weight: bold;
+
+}
+
+@font-face {
+    font-family: intomedia;
+    src: url(/font/Fractul-Medium.otf) format('truetype'),
+         url(/font/Fractul-Medium.otf) format('otf');
+    font-weight: lighter;
+
+}
+
+@font-face {
+    font-family: intomedia;
+    src: url(/font/Fractul-Regular.ttf) format('truetype'),
+         url(/font/Fractul-Regular.otf) format('otf');
+    font-weight: light;
+
+}
+
+/* src: url(/font/Fractul-Bold.ttf);
+src: url(/font/Fractul-Medium.otf);
+src: url(/font/Fractul-Medium.ttf);
+src: url(/font/Fractul-Regular.otf);
+src: url(/font/Fractul-Regular.ttf);
+src: url(/font/Fractul-Thin.otf);
+src: url(/font/Fractul-Thin.ttf); */
+
 *,
 *:before,
 *:after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Montserrat",Poppins;
+    font-family: "intomedia",Poppins;
  
 }
 
@@ -119,9 +151,9 @@ section{
     display: flex;
     place-items: center;
     font-size: 45px;
-    font-weight: 500;
     color: white;
     justify-content: center;
+    gap: 200px;
 }
 
 
@@ -151,9 +183,11 @@ section{
 } */
 .content p{
     font-size: 18px;
-    width: 53%;
+    width: 750px;
     margin-top: 20px;
     line-height: 40px;
+    font-weight: medium;
+    letter-spacing: 1pt;
 }
 
 .words{
@@ -478,13 +512,17 @@ footer p{
 .sectionOne .content{
     display: flex;
     justify-content:center;
+    gap: 200px;
     align-items: center;
 }
 .content .writeup h2{
     font-size: 95px;
-    font-family: "poppins";
-    font-weight: 200;
+    font-family: "intomedia", poppins;
+    font-weight: lighter;
     color: #7677e7;
+}
+.content .writeup h1{
+    font-weight: bold;
 }
 
 .writeup{
@@ -663,6 +701,7 @@ color: #f79202;
     width: 850px;
    margin-bottom: 25px; 
    font-size: 18px;
+   font-weight: small;
 }
 
 .design .learnmore-btn img{
