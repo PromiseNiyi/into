@@ -219,6 +219,7 @@
 <script>
   // Function to toggle the menu
   function toggleMenu() {
+    event.preventDefault(); // Prevent the default behavior of the button (page scroll to top)
     var menuContainer = document.getElementById("menu");
     if (menuContainer.style.display === "" || menuContainer.style.display === "none") {
       menuContainer.style.display = "flex";
