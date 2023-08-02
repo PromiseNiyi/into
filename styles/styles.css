@@ -38,14 +38,19 @@ src: url(/font/Fractul-Thin.ttf); */
     margin: 0;
     box-sizing: border-box;
     font-family: "intomedia",Poppins;
+    /* height: auto; */
  
 }
 
 html,body{
     background-color: rgb(24, 24, 24);
-    width: 100%;
+    /* width: 100%; */
     overflow-x: hidden;
     scroll-behavior: smooth;
+    height: 100%;
+    height: -webkit-fill-available;
+    /* height: ; */
+    /* overflow-y: scroll; */
     }
   
 
@@ -54,7 +59,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 10px ;
+    padding: 10px ;
     width: 100%;
     height: 12vh;
     z-index: 800;
@@ -79,7 +84,6 @@ padding:0;
     /* margin: 0 25px; */
     padding-inline:clamp(2rem,4vw, 9rem);
     font-size: 12px;
-   
    
 }
 
@@ -149,8 +153,10 @@ section{
 
 /* section1 */
 .first-section{
-    padding: 20px;
-    height: 70vh;
+    height: auto;
+    padding: min(30vh, 10rem) 2em;
+    /* padding: 20px;
+    height: 70vh; */
     /* background-color: #000000; */
     display: flex;
     /* place-items: center; */
@@ -159,6 +165,7 @@ section{
     justify-content: space-evenly;
     align-items: center;
     /* gap: 200px; */
+    overflow: hidden;
 }
 .first-section .main-image img{
     width:700px;
@@ -245,7 +252,8 @@ section{
 
 /* section 2 */
 .second-section{
-    padding: 50px 0;
+    padding: min(30vh, 10rem) 2em;
+    /* padding: 50px 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -390,11 +398,15 @@ section{
 
 .third-section{
 color: white;
-height: 80vh;
+height: auto;
+max-height: 80vh;
+min-height: 60vh;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+padding: min(30vh, 10rem) 2em;
+padding-top: 10px;
 }
 
 .third-section h2{
@@ -482,14 +494,19 @@ align-items: center;
 }
 
 footer{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(212, 212, 212);
-    height: 20vh;
+    height: 10vh;
+    /* padding: min(10vh, 10rem) 2em; */
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 footer p{
     font-size: 14px;
+
 }
 
 
@@ -507,16 +524,22 @@ footer p{
     align-items: center;
     align-items: left;
     text-align: left;
-    height: 90vh;
-    padding: 5px 6rem;
+    height: auto;
+    min-height: 100vh;
+    padding: min(30vh, 10rem) 2em;
+    /* padding: 5px 6rem; */
     /* background-color: #1e1e1e; */
 }
 
 .sectionOne .content{
+    width: 100%;
     display: flex;
-    justify-content:center;
-    gap: 200px;
+    justify-content:space-evenly;
     align-items: center;
+    gap: 20px;
+}
+.sectionOne .content .cont{
+    padding-inline:clamp(2rem,2vw, 9px);
 }
 .content .writeup h2{
     font-size: 95px;
@@ -766,7 +789,7 @@ color: #f79202;
     .wrapper{
         box-sizing: content-box;
         color: white;
-                height: 120px;
+        height: 120px;
         /* padding: 50px 30px; */
         display: flex;
        align-items: left;
@@ -802,10 +825,17 @@ color: #f79202;
 }
 
 @media only screen and (max-width: 1500px) {
+    nav .navigation {
+       
+        /* padding: min(5vh, 10rem) 1em; */
+        /* scroll-padding-top:20px; */
+        padding-top: 50px;
+    }
+
     .first-section{
-       padding-top: 25px;
+       /* padding-top: 25px; */
         flex-direction: column;
-        height: 100vh;
+        /* height: 100vh; */
     }
     .content p{
         font-size: 17px;
@@ -816,8 +846,92 @@ color: #f79202;
     .content{
         margin-bottom: 50px;
     }
+
+
+
 }
 
+@media only screen and (max-width: 1200px) {
+    .sectionOne {
+        min-height: 100vh;
+        padding-top: 0px;
+    }
+
+    .sectionOne .content{
+             /* gap: 25px; */
+             align-items: center;
+             justify-content: center;
+             place-content: center;
+             margin-bottom: 0;
+             padding-left: 0;
+             
+    }
+    .writeup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        width: 600px;
+        padding-bottom: 0;
+    }
+    .writeup h1{
+        font-size: 65px; 
+    }
+    .content .writeup h2{
+        font-size: 70px; 
+    }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+
+    /* ________________/////////About page////////////_____________________________ */
+    
+    .sectionOne{
+        padding: 10px;
+    }
+
+    .sectionOne .content{
+     flex-direction: column;
+     align-items: center;
+    width: 100%;
+    padding: 10px;
+    
+    }
+   
+    .writeup{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+        padding-bottom: 10rem;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content .cont{
+        padding: 0;
+    }
+    
+    .content .writeup h1{
+        width: 100%;
+        font-size: 65px; 
+        text-align: center;
+        padding: 0;
+    }
+
+    .content .writeup h1 span{
+        text-align: center;
+    }
+
+
+        }
+    
 
     
 @media only screen and (max-width: 900px) {
@@ -835,7 +949,9 @@ color: #f79202;
         display: none;
         z-index: 2;
     }
-    
+
+
+
     .resize-menu{
         display: flex;
         align-items: center;
@@ -927,8 +1043,8 @@ color: #f79202;
 /* ////////////////////////////////////////////////// */
 
 .first-section{
-    padding-top: 50px;
-    height: 100vh;
+    /* padding-top: 50px;
+    height: 100vh; */
     justify-content: center;
 }
 .first-section .content{
@@ -947,7 +1063,7 @@ margin-bottom: 20px;
     .wrapper{
         box-sizing: content-box;
         color: white;
-                height: 120px;
+        height: 100px;
         /* padding: 50px 30px; */
         display: flex;
        align-items: left;
@@ -959,7 +1075,7 @@ margin-bottom: 20px;
     
     .wrapper h1, .content h1{
         font-size: 60px;
-        line-height: 120%;
+        line-height: 110%;
     }
 
     .content p{
@@ -974,10 +1090,11 @@ margin-bottom: 20px;
         overflow: hidden;
     }
     .words span{
+        text-align: left;
         display: block;
         font-weight: 700;
         font-size: 60px;
-        height: 125%;
+        height: 120%;
         padding-left: 10px;
         color: #f79202;
         animation: spin_words 8s infinite;
@@ -1012,10 +1129,39 @@ margin-bottom: 20px;
     margin-bottom: 100px;
 }
 
+.third-section{
+    padding-top: 0px;
+
+}
+/* ________________/////////About page////////////_____________________________ */
+
+
+
+
+
 
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 @media only screen and (max-width: 720px) {
 
@@ -1032,6 +1178,7 @@ nav{
     display: none;
     z-index: 2;
 }
+
 
 .resize-menu{
     display: flex;
@@ -1129,15 +1276,19 @@ text-transform: none;
 /* ////////////////////////////////////////////////// */
 
 .first-section{
-    padding-top: 100px;
-    height: 100vh;
+    padding-left: 0;
+    padding-right: 0;
+    /* padding-top: 100px;
+    height: 100vh; */
     justify-content: center;
-    padding: 20px;
-    height: 100vh;
+    /* padding: 20px; */
+    height: auto;
+    /* max-height: 60vh; */
     display: flex;
     flex-direction: column;
     place-items: center;
     justify-content: center;
+    padding-bottom: 0;
  }
 .first-section .content{
 align-items: center;
@@ -1155,7 +1306,7 @@ margin-bottom: 20px;
     .wrapper{
         box-sizing: content-box;
         color: white;
-        height: 120px;
+        height: 50px;
         /* padding: 50px 30px; */
         display: flex;
         align-items: left;
@@ -1171,11 +1322,14 @@ margin-bottom: 20px;
     }
 
     .content p{
+        width: 100%;
         font-size: 14px;
-        max-width: 350px;
-        width: 350px;
+        padding: 2px 10px;
+        /* max-width: 350px; */
+        /* width: 350px; */
         line-height: 25px;
         font-weight: normal;
+        letter-spacing: 1px;
    
     }
     
@@ -1183,10 +1337,11 @@ margin-bottom: 20px;
         overflow: hidden;
     }
     .words span{
+        text-align: left;
         display: block;
         font-weight: 700;
         font-size: 40px;
-        height: 125%;
+        height: 120%;
         padding-left: 10px;
         color: #f79202;
         animation: spin_words 8s infinite;
@@ -1203,6 +1358,8 @@ margin-bottom: 20px;
 
 .second-section{
     width: 100%;
+    max-height: fit-content;
+    padding-bottom: 20px;
 }
     
 .grid-container {
@@ -1233,10 +1390,16 @@ grid-row-end: span 1;
 grid-column: span 1;
 
 }
+.third-section{
+    /* padding: min(1vh, 5rem) 1em; */
+    padding: 10px 0 0 0;
+
+}
 
 .third-section h2{
     font-size: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+    padding: 0;
 }
 
 
@@ -1293,11 +1456,13 @@ grid-column: span 1;
         color: transparent;
         margin: 20px 10px 50px 10px;
         
+        
     }
     .resize-form button img{
         margin-top: 25px;
         width: 150px;
         transition: all ease 0.3s;
+        cursor: pointer;
     
     }
 
@@ -1324,7 +1489,9 @@ grid-column: span 1;
 }
 
 .first-section{
-    padding-top: 150px;
+    height: auto;
+    /* padding: min(30vh, 10rem) 2em; */
+    /* padding-top: 150px; */
 }
 
 .wrapper h1, .content h1{
