@@ -1503,12 +1503,12 @@ grid-column: span 1;
 }
 .third-section{
     /* padding: min(1vh, 5rem) 1em; */
-    padding: 10px 0 0 0;
+    padding: 100px 0 0 0;
     height: auto;
 }
 
 .third-section h2{
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 35px;
     padding: 0;
 }
@@ -1534,14 +1534,15 @@ grid-column: span 1;
         justify-content: center;
         width: 350px;
         gap: 15px;
+        align-items: center;
         
     }
 
     .small-form input, .small-form textarea{
         /* height: 40px; */
         width: 100%;
-        max-width: 350px;
-        min-width: 350px;
+        max-width: 300px;
+        min-width: 300px;
         font-size: 14px;
         line-height: 60px;
         padding:0 10px ;
