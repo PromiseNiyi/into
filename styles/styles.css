@@ -987,11 +987,14 @@ color: #f79202;
 
     header{
         position: fixed;
+        top: 0;
+        left: 0;
         z-index: 2;
         align-items: center;
         text-align: center;
         justify-content: center;
         width: 100%;
+        
     }
     
     nav{
@@ -1002,13 +1005,16 @@ color: #f79202;
 
 
     .resize-menu{
+      
+        /* position: fixed; */
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding:15px 45px 15px 15px;
+        padding:15px 45px;
         margin-top: 20px;
         transition: all 1s ease;
         opacity: 1;
+        /* top: 0rem; */
     }
     .resize-menu #menuToggle{
         transition: all 1s ease;
@@ -1251,14 +1257,14 @@ height: 40vh;
     
 @media only screen and (max-width: 720px) {
 
-header{
+/* header{
     position: fixed;
     z-index: 2;
     align-items: center;
     text-align: center;
     justify-content: center;
     width: 100%;
-}
+} */
 
 nav{
     display: none;
