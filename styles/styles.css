@@ -104,6 +104,15 @@ color:#f79202;
 
 }
 
+.main-logo img{
+width: 75px;
+}
+
+.resize-logo img{
+    width: 70px;
+    }
+    
+
 li a{
     color: white;
     text-decoration: none;
@@ -1460,6 +1469,7 @@ margin-bottom: 20px;
 .second-section{
     width: 100%;
     max-height: fit-content;
+    height: auto;
     padding-bottom: 20px;
 }
     
@@ -1494,7 +1504,7 @@ grid-column: span 1;
 .third-section{
     /* padding: min(1vh, 5rem) 1em; */
     padding: 10px 0 0 0;
-
+    height: auto;
 }
 
 .third-section h2{
