@@ -56,12 +56,16 @@ html,body{
     /* width: 100%; */
     overflow-x: hidden;
     scroll-behavior: smooth;
-    height: 100%;
+    height: auto;
     height: -webkit-fill-available;
     /* height: ; */
     /* overflow-y: scroll; */
     }
   
+
+    section{
+        margin: 25px 0;
+    }
 
 /* navigation */
 nav{
@@ -71,7 +75,7 @@ nav{
     padding: 10px ;
     width: 100%;
     height: 12vh;
-    z-index: 800;
+    /* z-index: 800; */
 }
 
 ul, li, a{
@@ -276,7 +280,8 @@ section{
     justify-content: center;
     align-items: center;
     height: auto;
-    margin: 0;
+    padding: 30px ;
+    
 }
 
 /* img{
@@ -417,7 +422,7 @@ section{
 .third-section{
 color: white;
 height: auto;
-max-height: 80vh;
+/* max-height: 80vh; */
 min-height: 60vh;
 display: flex;
 flex-direction: column;
@@ -425,6 +430,7 @@ justify-content: center;
 align-items: center;
 padding: min(30vh, 10rem) 2em;
 padding-top: 10px;
+padding-bottom: 10px;
 }
 
 .third-section h2{
@@ -511,6 +517,7 @@ padding-top: 10px;
     margin: 0 3px;
 }
 
+
 footer{
     width: 100%;
     display: flex;
@@ -521,6 +528,7 @@ footer{
     /* padding: min(10vh, 10rem) 2em; */
     padding-bottom: 5px;
     padding-top: 5px;
+   
 }
 footer p{
     font-size: 14px;
@@ -658,7 +666,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin: 20px 0 50px;
-padding:0 10px;
+padding:10px;
 /* padding-inline:clamp(25rem,9vw, 9rem); */
 width: 100%;
 
@@ -877,7 +885,7 @@ color: #f79202;
 @media only screen and (max-width: 1200px) {
     .sectionOne {
         min-height: 100vh;
-        padding-top: 0px;
+        padding-top: 20px 0;
     }
 
     .sectionOne .content{
@@ -919,8 +927,8 @@ color: #f79202;
     .sectionOne .content{
      flex-direction: column;
      align-items: center;
-    width: 100%;
-    padding: 10px;
+     width: 100%;
+     padding: 20px;
     
     }
    
@@ -962,13 +970,15 @@ color: #f79202;
 
     .card-section{
        flex-direction: column; 
+       height: auto;
+       padding: 10px;
     }
     .sectionThree .card-section .cards{
   
         margin: 20px 10px;
-        height: 30vh;
-        min-width: 38vh;
-        width: 30vh;
+        height: 300px;
+        min-width: 400px;
+        width: 400px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1007,7 +1017,7 @@ color: #f79202;
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 2;
+        z-index: 1;
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -1017,7 +1027,7 @@ color: #f79202;
     
     nav{
         display: none;
-        z-index: 2;
+        /* z-index: 2; */
     }
 
 
@@ -1061,7 +1071,7 @@ color: #f79202;
         max-width: 400px;
         width: 400px;
         height: 500px;
-        z-index: 999;
+        /* z-index: 999; */
         /* top: 50%; */
         left: 50%;
         transform: translateX(-50%);
@@ -1209,6 +1219,11 @@ margin-bottom: 20px;
 }
 /* ________________/////////About page////////////_____________________________ */
 
+.sectionTwo, .sectionThree{
+    height: auto;
+}
+
+
 .sectionTwo .info{
     width: 100%;
 }
@@ -1230,11 +1245,16 @@ margin-bottom: 20px;
     .sectionThree .convo-btn img{
         width: 130px;
     }
+    
 /* _____________________/////Service Page/////_______________________ */
 
 
+.section1,.section2,.section3{
+    height: auto;
+}
+
 .section1{
-padding-top: 7rem;
+margin-top: 10rem;
 }
 
 .design{
@@ -1242,16 +1262,21 @@ padding-top: 7rem;
     padding: 2rem;
     align-items: center;
     text-align: center;
+    height: auto;
+    min-height: 400px;
 }
 
 .section2, .section3, .section3{
 width: 100%;
-height: 40vh;
+height: auto;
 }
 .design p{
     width: 100%;
     /* padding: 5px 2rem; */
 }
+
+
+
 }
 
 
@@ -1286,7 +1311,6 @@ height: 40vh;
 
 nav{
     display: none;
-    z-index: 2;
 }
 
 
@@ -1294,7 +1318,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding:15px 45px 15px 25px;
+    padding:15px 30px 15px 25px;
     margin-top: 20px;
     transition: all 1s ease;
     opacity: 1;
@@ -1326,7 +1350,7 @@ nav{
     max-width: 400px;
     width: 400px;
     height: 500px;
-    z-index: 999;
+    /* z-index: 999; */
     /* top: 50%; */
     left: 50%;
     transform: translateX(-50%);
@@ -1471,6 +1495,7 @@ margin-bottom: 20px;
     max-height: fit-content;
     height: auto;
     padding-bottom: 20px;
+    margin-bottom: 20px;
 }
     
 .grid-container {
@@ -1503,7 +1528,7 @@ grid-column: span 1;
 }
 .third-section{
     /* padding: min(1vh, 5rem) 1em; */
-    padding: 100px 0 0 0;
+    padding: 10px 0 0 0;
     height: auto;
 }
 
@@ -1524,7 +1549,7 @@ grid-column: span 1;
     opacity: 1;
     padding: 20px;
     /* width: 100%; */
-
+    height: 100%;
     }
 
     .resize-form .small-form{
@@ -1579,6 +1604,20 @@ grid-column: span 1;
     }
 
 
+    footer{
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        position: relative;
+        margin-top: 10px;
+        /* min-height: 10vh; */
+        
+    }
+    footer p{
+        font-size: 12px;
+    
+    }
+    
     /* ___________________________About Section______________________ */
 
     .sectionTwo h2{
@@ -1593,20 +1632,42 @@ grid-column: span 1;
             font-size: 15px;
         }
     
+
+    .sectionThree{
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .sectionThree .initial{
+        width: 100%;
+        padding: 0;
+    }
     .sectionThree h1{
-        font-size: 40px;
+        font-size: 35px;
     }
     .sectionThree p{
-        font-size: 14px;
+        width: 100%;
+        font-size: 9pt;
         line-height: 28px;
-        padding: 10px 0;
-        margin: 0 12rem;
+        padding: 5px100px;
+        margin: 0;
+    }
+
+
+    .sectionThree .card-section .cards{
+  
+       height: 350px;
+        min-width: 310px;
+        width: 310px;
+
     }
     .sectionThree .card-section .cards p{
-        font-size: 14px;
+        font-size: 9pt;
         display: flex;
         padding: 0;
         margin: 0;
+        width: 100%;
     }
 
     /* __________________Service page____________ */
