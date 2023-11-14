@@ -1219,10 +1219,26 @@ margin-bottom: 20px;
 }
 /* ________________/////////About page////////////_____________________________ */
 
+.content{
+    margin-top: 20px ;
+    padding: 20px;
+}
+.writeup{
+    width: 100%;
+}
+.content .writeup h2{
+    font-size: 50px; 
+}
+.content .writeup h1{
+    font-size: 50px; 
+}
+
 .sectionTwo, .sectionThree{
     height: auto;
 }
-
+.sectionTwo{
+padding: 30px 10px;
+}
 
 .sectionTwo .info{
     width: 100%;
@@ -1723,7 +1739,6 @@ grid-column: span 1;
 
 .content{
 align-items: center;
-padding: 20px;
 }
 .content p{
     line-height: 18px;
