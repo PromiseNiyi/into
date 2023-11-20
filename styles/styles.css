@@ -186,12 +186,39 @@ section{
     color: white;
     justify-content: space-evenly;
     align-items: center;
-    /* gap: 200px; */
+    gap: 200px;
     overflow: hidden;
 }
+
+.first-section .main-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 25px;
+}
+
 .first-section .main-image img{
     width:700px;
+
 }
+
+.floating-image {
+    position: absolute;
+    animation: floatAnimation 5s infinite alternate;
+}
+
+@keyframes floatAnimation {
+    0% {
+        transform: translate(0, -20px);
+    }
+    100% {
+        transform: translate(0px, 20px); /* Adjust values as needed */
+    }
+}
+
+
+
 
 .wrapper{
     box-sizing: content-box;
@@ -213,6 +240,10 @@ section{
 /* .content h1{
     /* line-height: 100px;
 } */
+
+.content{
+    margin-left: -300px;
+}
 .content p{
     font-size: 18px;
     width: 750px;
@@ -800,17 +831,20 @@ color: #f79202;
 
 
 
+/* _____________________________??????????????????????????WERTYUJkflfdjvzjkvkejhcjzxj j */
+
+/* ____________________________________________________________________________________________________ */
 
 
-
-
-
-
+/* ______________________________________________________ */
 
 /* Responsivenes___________________________________________________________________ */
 @media only screen and (max-width: 1700px) {
 .content{
     padding-left:25px ;
+}
+.content{
+    margin-left: -200px;
 }
 
 
@@ -876,6 +910,7 @@ color: #f79202;
     }
     .content{
         margin-bottom: 50px;
+        margin-left:0px;
     }
 
 
