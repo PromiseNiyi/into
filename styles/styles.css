@@ -198,19 +198,57 @@ section{
     padding-right: 25px;
 }
 
-.first-section .main-image img{
-    width:700px;
-
+.first-section .main-image .floating-image img{
+    width:450px;
+    transform: translateY(150px) rotate(100deg) ;
+    /* transform: rotate(90deg); */
 }
+.first-section .main-image .floating-image2 img{
+    width:300px;
+    transform: rotate(50deg) translateX(180px) translateY(-100px);
+}
+.first-section .main-image .floating-image3 img{
+    width:350px;
+    transform: translateX(-200px);
+}
+.first-section .main-image .floating-image4 img{
+    width:400px;
+    transform: translateY(-50px);
+}
+.first-section .main-image .floating-image5 img{
+    width:250px;
+    transform: rotate(160deg) translateX(250px) translateY(-150px);
+}
+
 
 .floating-image {
     position: absolute;
     animation: floatAnimation 5s infinite alternate;
+   
 }
+.floating-image2 {
+    position: absolute;
+    animation: floatAnimation 6s infinite alternate;
+}
+.floating-image3 {
+    position: absolute;
+    animation: floatAnimation 10s infinite alternate;
+   
+}
+.floating-image4 {
+    position: absolute;
+    animation: floatAnimation 3s infinite alternate;
+    
+}
+.floating-image5 {
+    position: absolute;
+    animation: floatAnimation 4s infinite alternate;
+}
+
 
 @keyframes floatAnimation {
     0% {
-        transform: translate(0, -20px);
+        transform: translate(0, 0px);
     }
     100% {
         transform: translate(0px, 20px); /* Adjust values as needed */
