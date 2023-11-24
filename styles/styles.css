@@ -940,6 +940,32 @@ color: #f79202;
         flex-direction: column;
         /* height: 100vh; */
     }
+
+
+
+    .first-section .main-image .floating-image img{
+        width:250px;
+        transform: translateY(-20px) translateX(-20px) rotate(100deg) ;
+        /* transform: rotate(90deg); */
+    }
+    .first-section .main-image .floating-image2 img{
+        width:200px;
+        transform: rotate(50deg) translateX(50px) translateY(-100px);
+    }
+    .first-section .main-image .floating-image3 img{
+        width:200px;
+        transform: translateY(-50px) translateX(-150px);
+    }
+    .first-section .main-image .floating-image4 img{
+        width:200px;
+        transform: translateY(-150px);
+    }
+    .first-section .main-image .floating-image5 img{
+        width:150px;
+        transform: rotate(160deg) translateX(80px) translateY(-15px);
+    }
+
+
     .content p{
         font-size: 17px;
         width: 700px;
