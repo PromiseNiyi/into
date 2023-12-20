@@ -916,7 +916,7 @@ color: #f79202;
     /* flex-direction: column; */
     align-items: center;
     justify-content:space-evenly;
-    padding: 20px 10px 20px 100px;
+    padding: 20px 10px 20px 15px;
    
 }
 
@@ -941,33 +941,33 @@ color: #f79202;
 
 
 .single-image1 img {
-    width: 500px;
-    /* position: absolute; */
+    width:400px;
+     /* position: absolute; */
     animation: floatAnimation 3s infinite alternate;
     float: inline-end;
    
 }
 
 .single-image2 img {
-    width: 500px;
+    width: 400px;
     /* position: absolute; */
     animation: floatAnimation 2s infinite alternate;
     float: inline-end;
    
 }.single-image3 img {
-    width: 500px;
+    width: 400px;
     /* position: absolute; */
     animation: floatAnimation 4s infinite alternate;
     float: inline-end;
    
 }.single-image4 img {
-    width: 500px;
+    width: 400px;
     /* position: absolute; */
     animation: floatAnimation 3s infinite alternate;
     float: inline-end;
    
 }.single-image5 img {
-    width: 500px;
+    width: 400px;
     /* position: absolute; */
     animation: floatAnimation 2s infinite alternate;
     float: inline-end;
@@ -984,10 +984,11 @@ color: #f79202;
 
 .design p{
     line-height: 28px;
-    width: 850px;
+    width: 800px;
    margin-bottom: 25px; 
    font-size: 20px;
    font-weight: small;
+   
 }
 
 .design .learnmore-btn img{
@@ -1270,6 +1271,13 @@ color: #f79202;
     }
 
 
+/* /////////////////////service/////////////////// */
+
+
+.design {
+    padding-left: 50px;
+}
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1317,6 +1325,32 @@ color: #f79202;
         font-size: 65px;  
     }
     
+
+
+
+
+
+/* /////////////////////service/////////////////// */
+.single-image1 img {
+    display: none;
+ }
+ .single-image2 img {
+     display: none;
+  }
+  .single-image3 img {
+     display: none;
+  }
+  .single-image4 img {
+     display: none;
+  }
+  .single-image5 img {
+     display: none;
+  }
+
+
+
+
+
 
 }
 
@@ -1413,8 +1447,18 @@ color: #f79202;
        margin: 0;
     }
 
+
+
+    /* ////////////////////////////////services//////////////////// */
+
+
+
+
     }
     
+
+
+
 
     
 @media only screen and (max-width: 900px) {
@@ -1727,7 +1771,7 @@ margin-top: 10rem;
     min-height: 400px;
 }
 
-.section2, .section3, .section3{
+.section2, .section3, .section3, .section3-1, .section3-2{
 width: 100%;
 height: auto;
 }
