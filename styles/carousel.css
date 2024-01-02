@@ -54,3 +54,23 @@
     margin: 0 40px;
 }
 
+/* /////////////////////RESIZE/////////////////////// */
+
+@media only screen and (max-width: 720px) {
+    
+    .hcarousel .logos .logos-slide img{
+        height: 40px;
+        margin: 0 40px;
+    }
+
+    .logos::before,
+.logos::after{
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+}
