@@ -26,6 +26,7 @@
 
     <script type="text/javascript" src="scripts/scripts.js" defer></script>
     <script type="text/javascript" src="scripts/animate.js"></script>
+    <script type="text/javascript" src="scripts/search.js"></script>
     <script src="https://kit.fontawesome.com/a1708c9e84.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -79,11 +80,21 @@
       <button id="search">Search</button>
     </div>
     <div id="categorybtn">
-      <button class="button-value">All</button>
-      <button class="button-value">Date</button>
-      <button class="button-value">Business</button>
-      <button class="button-value">product</button>
+      <button class="button-value" onclick="filterProduct('all')">All</button>
+      <button class="button-value" onclick="filterProduct('Topwear')">
+        Topwear
+      </button>
+      <button class="button-value" onclick="filterProduct('Bottomwear')">
+        Bottomwear
+      </button>
+      <button class="button-value" onclick="filterProduct('Jacket')">
+        Jacket
+      </button>
+      <button class="button-value" onclick="filterProduct('Watch')">
+        Watch
+      </button>
     </div>
+    <div id="products"></div>
   </div>
 
 </section>
