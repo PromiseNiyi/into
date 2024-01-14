@@ -2,51 +2,51 @@ let products = {
     data: [
       {
         productName: "Regular White T-Shirt",
-        category: "Topwear",
+        category: "Office",
         price: "30",
-        image: "white-tshirt.jpg",
+        image: "image1.jpg",
       },
       {
         productName: "Beige Short Skirt",
-        category: "Bottomwear",
+        category: "New",
         price: "49",
-        image: "short-skirt.jpg",
+        image: "image2.jpg",
       },
       {
         productName: "Sporty SmartWatch",
-        category: "Watch",
+        category: "Food",
         price: "99",
-        image: "sporty-smartwatch.jpg",
+        image: "image3.jpg",
       },
       {
         productName: "Basic Knitted Top",
-        category: "Topwear",
+        category: "Religious",
         price: "29",
-        image: "knitted-top.jpg",
+        image: "image4.jpg",
       },
       {
         productName: "Black Leather Jacket",
-        category: "Jacket",
+        category: "New",
         price: "129",
-        image: "black-leather-jacket.jpg",
+        image: "image5.jpg",
       },
       {
         productName: "Stylish Pink Trousers",
-        category: "Bottomwear",
+        category: "Office",
         price: "89",
-        image: "pink-trousers.jpg",
+        image: "image6.jpg",
       },
       {
         productName: "Brown Men's Jacket",
-        category: "Jacket",
+        category: "Food",
         price: "189",
-        image: "brown-jacket.jpg",
+        image: "image7.jpg",
       },
       {
         productName: "Comfy Gray Pants",
-        category: "Bottomwear",
+        category: "Religious",
         price: "49",
-        image: "comfy-gray-pants.jpg",
+        image: "image8.jpg",
       },
     ],
   };
@@ -84,8 +84,8 @@ let products = {
   //parameter passed from button (Parameter same as category)
   function filterProduct(value) {
     //Button class code
-    let categorybtn = document.querySelectorAll(".button-value");
-    categorybtn.forEach((button) => {
+    let buttons = document.querySelectorAll(".button-value");
+    buttons.forEach((button) => {
       //check if value equals innerText
       if (value.toUpperCase() == button.innerText.toUpperCase()) {
         button.classList.add("active");
@@ -99,7 +99,7 @@ let products = {
     //loop through all cards
     elements.forEach((element) => {
       //display all cards on 'all' button click
-      if (value == "all") {
+      if (value == "All") {
         element.classList.remove("hide");
       } else {
         //Check if element contains category class
@@ -136,6 +136,14 @@ let products = {
   
   //Initially display all products
   window.onload = () => {
-    filterProduct("all");
+    filterProduct("All");
   };
   
+
+
+
+
+
+// testinggggggg
+
+

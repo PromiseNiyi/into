@@ -1,7 +1,7 @@
 /* ////////////////////////////////////////////SEARCH STYLING//////////////////////////////////// */
 .searchsection{
     /* background-color: white; */
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -27,7 +27,7 @@ padding: 1em 0.3em;
 outline: none;
 }
 #search-container input:focus{
-    border-bottom-color:#f79202 ;
+    border-bottom-color:#f79202;
 }
 #search-container button{
     padding: 1em 2.5em;
@@ -118,4 +118,12 @@ outline: none;
       grid-template-columns: auto auto;
       grid-column-gap: 1em;
     }
-  }
+  } 
+
+
+
+
+
+
+
+  

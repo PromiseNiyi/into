@@ -21,13 +21,18 @@
     <link rel="shortcut icon" href="icons/favico.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/animate.css">
-    <link rel="stylesheet" href="styles/search.css">
+    <!-- <link rel="stylesheet" href="styles/search.css"> -->
+    <link rel="stylesheet" href="styles/searchstyles.css">
+   
+
 
 
 
     <script type="text/javascript" src="scripts/scripts.js" defer></script>
     <script type="text/javascript" src="scripts/animate.js"></script>
     <script type="text/javascript" src="scripts/search.js"></script>
+    
+
     <script src="https://kit.fontawesome.com/a1708c9e84.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -74,16 +79,19 @@
       </div>
          
     </section>
-<section class="searchsection">
+
+
+    <!-- SEARCH SECTION VIP -->
+<!-- <section class="searchsection">
   <div class="searchwrapper">
     <div id="search-container">
       <input type="search" id="search-input" placeholder="search product name here...">
       <button id="search">Search</button>
     </div>
-    <div id="categorybtn">
-      <button class="button-value" onclick="filterProduct('all')">All</button>
-      <button class="button-value" onclick="filterProduct('Date')">
-        Date
+    <div id="buttons">
+      <button class="button-value" onclick="filterProduct('All')">All</button>
+      <button class="button-value" onclick="filterProduct('New')">
+        New
       </button>
       <button class="button-value" onclick="filterProduct('Office')">
         Office
@@ -98,7 +106,39 @@
     <div id="products"></div>
   </div>
 
+</section> -->
+
+
+
+
+<section class="filter-section"> 
+  <div class="search-section">
+       <input type="text" id="searchInput" placeholder="filter by name" oninput="searchImages()">
+</div>
+  <div class="filter-buttons">
+      <button onclick="filterImages('all')">All</button>
+      <button onclick="filterImages('category1')">Category 1</button>
+      <button onclick="filterImages('category2')">Category 2</button>
+  </div>
+
+
+
+<div class="image-grid" id="imageGrid">
+  <div class="image-item category1" data-name="Image 1">
+      <img src="image1.jpg" alt="Image 1">
+  </div>
+  <div class="image-item category2" data-name="Image 2">
+      <img src="image2.jpg" alt="Image 2">
+  </div>
+  <!-- Add more images with appropriate categories and data-name attribute -->
+
+  <!-- Repeat this structure for all images -->
+</div>
+
+
 </section>
+
+
 
 
     <section class="second-section">
@@ -167,10 +207,18 @@
 
 </section>
 
+
+
+
+
   <footer>
     <p>intocreativity agency - All rights reserved <i class="fa-solid fa-copyright"></i> 2023</p>
   </footer>
+
+  <script src="scripts/scriptsss.js"></script>
 </body>
+
+
 
 <!-- 
 <script>
