@@ -39,7 +39,7 @@
 // }
 
 function filterImages(category) {
-    const images = document.querySelectorAll('.image-item');
+    const images = document.querySelectorAll('.grid-item');
     const buttons = document.querySelectorAll('.filter-buttons button');
 
     images.forEach(image => {
@@ -60,7 +60,7 @@ function filterImages(category) {
 
 function searchImages() {
     const searchTerm = document.getElementById('searchInput').value.toLowerCase();
-    const images = document.querySelectorAll('.image-item');
+    const images = document.querySelectorAll('.grid-item');
 
     images.forEach(image => {
         const imageName = image.getAttribute('data-name').toLowerCase();
