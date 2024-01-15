@@ -30,7 +30,7 @@
 
     <script type="text/javascript" src="scripts/scripts.js" defer></script>
     <script type="text/javascript" src="scripts/animate.js"></script>
-    <script type="text/javascript" src="scripts/search.js"></script>
+    <!-- <script type="text/javascript" src="scripts/search.js"></script> -->
     
 
     <script src="https://kit.fontawesome.com/a1708c9e84.js" crossorigin="anonymous"></script>
@@ -113,26 +113,24 @@
 
 <section class="filter-section"> 
   <div class="search-section">
-       <input type="text" id="searchInput" placeholder="filter by name" oninput="searchImages()">
+<input type="text" id="searchInput" placeholder="filter by name" oninput="searchImages()">
 </div>
-  <div class="filter-buttons">
-      <button onclick="filterImages('all')">All</button>
-      <button onclick="filterImages('category1')">Category 1</button>
-      <button onclick="filterImages('category2')">Category 2</button>
-  </div>
-
-
+<div class="filter-buttons">
+  <button onclick="filterImages('all')" id="allBtn" class="active">All</button>
+  <button onclick="filterImages('category1')" id="category1Btn">Category 1</button>
+  <button onclick="filterImages('category2')" id="category2Btn">Category 2</button>
+</div>
 
 <div class="image-grid" id="imageGrid">
-  <div class="image-item category1" data-name="Image 1">
-      <img src="image1.jpg" alt="Image 1">
-  </div>
-  <div class="image-item category2" data-name="Image 2">
-      <img src="image2.jpg" alt="Image 2">
-  </div>
-  <!-- Add more images with appropriate categories and data-name attribute -->
+<div class="image-item category1" data-name="Image 1">
+  <img src="image1.jpg" alt="Image 1">
+</div>
+<div class="image-item category2" data-name="Image 2">
+  <img src="image2.jpg" alt="Image 2">
+</div>
+<!-- Add more images with appropriate categories and data-name attribute -->
 
-  <!-- Repeat this structure for all images -->
+<!-- Repeat this structure for all images -->
 </div>
 
 

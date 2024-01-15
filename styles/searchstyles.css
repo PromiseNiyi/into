@@ -1,51 +1,55 @@
-
 .filter-section{
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-}
-.search-section input{
-    margin: 2em;
-    padding: 1em 2em;
-    color: white;
-    background-color: transparent;
-    border: none;
-    border-bottom:  1px solid white;
-    outline: none;
-    width: 250px;
-}
-.search-section input:focus{
-    border-bottom: 2px solid #f79202;
-    outline: none;
-    color: #f79202;
+    
 }
 
 
 .filter-buttons {
     margin-bottom: 20px;
-    
 }
 
 .filter-buttons button {
     padding: 1em 2em;
+    border-radius: 50px;
+    border: solid 2px #fff;
+    color: #fff;
+    outline: none;
     margin: 0 10px;
     cursor: pointer;
-    border-radius: 50px;
-    background-color:transparent;
-    color: #ffffff;
-    border: 2px solid white;
-    outline: none;
+    background-color: transparent; /* Default background color */
+    transition: all ease 0.5s;
 }
-
-.filter-buttons button:hover{
+.filter-buttons button:hover {
+    border: solid 2px #f79202;
     background-color: #f79202;
-    transition: all ease-in-out 0.2s;
-    color:#fff;
-    border-color: #f79202;
+}
+.filter-buttons button.active {
+    border: solid 2px #f79202;
+    outline: none;
+    background-color: #f79202; /* Active background color */
+    color: #fff; /* Active text color */
 }
 
+.search-section {
+    margin-bottom: 20px;
+}
+
+.search-section input {
+outline: none;
+padding: 1em;
+border: none;
+border-bottom: solid 2px #fff;
+background: none;
+color: #fff;
+
+}
+
+.search-section input:focus {
+    border-bottom: solid 2px #f79202;
+}
 .image-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -66,14 +70,3 @@
     height: auto;
     display: block;
 }
-
-/* Add styles for different categories */
-.category1 {
-    /* Define styles for category 1 images */
-}
-
-.category2 {
-    /* Define styles for category 2 images */
-}
-
-/* Add more categories as needed */
