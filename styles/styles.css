@@ -1046,6 +1046,41 @@ color: #f79202;
     width: 150px;
 }
 
+/* _______________________________Convo page stylinig ____________________________________ */
+
+.first-section-convo{
+
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+
+}
+
+.first-section-convo .contents{
+    width: 100%; display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #bf4c4a;
+}
+
+.first-section-convo .contents h2{
+    font-weight: bolder;
+    font-size: 95px;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* ____________________________projects page styling _________________________________ */
 
 
