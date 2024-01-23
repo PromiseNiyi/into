@@ -1235,6 +1235,12 @@ margin-bottom: 25px;
     width: 150px;
 }
 
+.third-section-projects .convo-btn{
+    margin-bottom: 40px;
+}
+.third-section-projects .convo-btn img{
+    width: 150px;
+}
 
   
 
@@ -1922,6 +1928,9 @@ height: auto;
     font-size: 50px;
     margin-bottom: 10px;
 }
+.sectionThree-services .convo-btn img{
+    width: 130px;
+}
 
 /* ///////////////////////////////project page//////////////////// */
 
@@ -1935,9 +1944,7 @@ height: auto;
 
 }
 
-.sectionThree-services .convo-btn img{
-    width: 130px;
-}
+
 
 .first-section-projects .contents h1{
 font-size: 50px;
@@ -1947,7 +1954,9 @@ font-size: 50px;
 }
 
 
-
+.third-section-projects .convo-btn img{
+    width: 130px;
+}
 
 
 
